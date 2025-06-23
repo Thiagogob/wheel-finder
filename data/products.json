@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Red Shirt", "color": "red", "size": "M", "image": "images/red-shirt.jpg" },
+  { "id": 2, "name": "Blue Jeans", "color": "blue", "size": "L", "image": "images/blue-jeans.jpg" },
+  { "id": 3, "name": "Black Hat", "color": "black", "size": "S", "image": "images/black-hat.jpg" }
+]

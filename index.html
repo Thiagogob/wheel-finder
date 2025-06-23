@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Rodas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjFLS%2F%2BpFk2b6hGqP0tD6kFhKx0D6K1GfG5gH1a12j8fO6fO6N5F5n" crossorigin="anonymous">
+    <style>
+
+          body {
+        background-color: #001f3f; /* Azul Marinho escuro */
+        color: #f8f9fa; /* Cor do texto principal, um branco suave do Bootstrap */
+    }
+        /* Estilos para alinhar múltiplos selects horizontalmente se desejar */
+        .filter-group {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+            gap: 15px; /* Espaço entre os dropdowns */
+        }
+        .filter-group > div {
+            flex: 1; /* Permite que cada div de filtro ocupe espaço igual */
+            min-width: 180px; /* Largura mínima antes de quebrar linha */
+        }
+
+
+    </style>
+</head>
+<body class="p-4">
+    <div class="container">
+      <img src="/images/mkrLogo.png" alt="">
+        <h2 class="mb-4 text-center">Cotação de Rodas</h2>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h4 class="card-title mb-3">Upload do Arquivo de Estoque (PDF)</h4>
+                <div class="input-group">
+                    <input type="file" id="stockFile" accept="application/pdf" class="form-control" />
+                    <button class="btn btn-success" onclick="uploadStock()">Enviar estoque</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="filterSection" class="card shadow-sm">
+            <div class="card-body">
+                <h4 class="card-title mb-3">Faça sua seleção</h4>
+
+                <div class="row g-3">
+                    <div class="col-md-4 col-sm-6">
+                        <label for="aroDropdown" class="form-label">Selecione o aro:</label>
+                        <select id="aroDropdown" class="form-select">
+                            <option value="14">ARO 14</option>
+                            <option value="15">ARO 15</option>
+                            <option value="16">ARO 16</option>
+                            <option value="17">ARO 17</option>
+                            <option value="18">ARO 18</option>
+                            <option value="19">ARO 19</option>
+                            <option value="20">ARO 20</option>
+                            <option value="22">ARO 22</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <label for="talaDropdown" class="form-label">Selecione a tala:</label>
+                        <select id="talaDropdown" multiple class="form-select">
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="7,5">7,5</option>
+                            <option value="8">8</option>
+                            <option value="8,5">8,5</option>
+                            <option value="9">9</option>
+                            <option value="9,5">9,5</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <label for="pcdDropdown" class="form-label">Furação (PCD):</label>
+                        <select id="pcdDropdown" multiple class="form-select">
+                            <option value="4X98">4X98</option>
+                            <option value="4X99">4X99</option>
+                            <option value="4X100">4X100</option>
+                            <option value="4X100">4X108</option>
+                            <option value="4X100">4X114</option>
+                            <option value="4X130">4X130</option>
+                            <option value="5X100">5X100</option>
+                            <option value="5X105">5X105</option>
+                            <option value="5X105">5X108</option>
+                            <option value="5X105">5X110</option>
+                            <option value="5X112">5X112</option>
+                            <option value="5X113">5X113</option>
+                            <option value="5X114">5X114</option>
+                            <option value="5X127">5X127</option>
+                            <option value="5X139">5X139</option>
+                            <option value="5X205">5X205</option>
+                            <option value="6X139">6X139</option>
+                            </select>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <label for="finishDropdown" class="form-label">Acabamento:</label>
+                        <select id="finishDropdown" multiple class="form-select">
+                            <option value="TODOS">TODOS</option>  
+                            <option value="B (PRETO)">PRETO</option>
+                            <option value="SS (PRATA)">PRATA</option>
+                            <option value="HG (PRATA ESPECIAL)">PRATA ESPECIAL</option>
+                            <option value="BF (BLACK FOSCO)">BLACK FOSCO</option>
+                            <option value="BD (PRETO DIAMANTADO)">PRETO DIAMANTADO</option>
+                            <option value="GB (GRAFITE BRILHANTE)">GRAFITE</option>
+                            
+                            </select>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <label for="marcaDropdown" class="form-label">Marca:</label>
+                        <select id="marcaDropdown" class="form-select">
+                            <option value="">Todas</option>
+                            <option value="VW">VW</option>
+                            <option value="GM">GM</option>
+                            <option value="FIAT">Fiat</option>
+                            <option value="AUDI">Audi</option>
+                            <option value="HONDA">Honda</option>
+                            <option value="HYUNDAI">Hyundai</option>
+                            <option value="BMW">BMW</option>
+                            <option value="FORD">Ford</option>
+                        </select>
+                    </div>
+                </div> <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                    <button class="btn btn-primary me-md-2" type="button" onclick="searchByFilters()">Buscar</button>
+                    <button id="downloadImagesFromBackend" class="btn btn-secondary" type="button">Baixar Imagens</button>
+                </div>
+            </div>
+        </div> <div id="results" class="mt-4 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            </div>
+    </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+</body>
+</html>
