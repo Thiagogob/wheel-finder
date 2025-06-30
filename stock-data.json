@@ -19,11 +19,11 @@
   },
   {
     "MODELO": "AMG",
-    "ARO": "19X8,",
+    "ARO": "19X8,5",
     "PCD": "5X112",
     "OFFSET": "45",
     "ACABAMENTO": "BD (PRETO DIAMANTADO.)",
-    "QTDE_SP": "0",
+    "QTDE_SP": "49",
     "QTDE_SC": "0"
   },
   {
@@ -176,7 +176,7 @@
     "PCD": "5X120",
     "OFFSET": "45",
     "ACABAMENTO": "GB (GRAFITE BRILHANTE)",
-    "QTDE_SP": "12",
+    "QTDE_SP": "4",
     "QTDE_SC": "0"
   },
   {
@@ -248,7 +248,7 @@
     "PCD": "4X100",
     "OFFSET": "40",
     "ACABAMENTO": "SD (PRATA DIAMANTADA)",
-    "QTDE_SP": "56",
+    "QTDE_SP": "48",
     "QTDE_SC": "0"
   },
   {
@@ -284,7 +284,7 @@
     "PCD": "5X112",
     "OFFSET": "30",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "16",
+    "QTDE_SP": "12",
     "QTDE_SC": "0"
   },
   {
@@ -1846,12 +1846,12 @@
   },
   {
     "MODELO": "F2",
-    "ARO": "20X7,5",
+    "ARO": "20X7,",
     "PCD": "4X100",
     "OFFSET": "42",
     "ACABAMENTO": "HG(PRATA ESPECIAL) F.L*",
     "QTDE_SP": "0",
-    "QTDE_SC": "8"
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "F2",
@@ -1977,7 +1977,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "B (PRETO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "4"
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "G140",
@@ -2372,7 +2372,7 @@
     "PCD": "5X105",
     "OFFSET": "42",
     "ACABAMENTO": "BF (BLACK FOSCO)",
-    "QTDE_SP": "9",
+    "QTDE_SP": "5",
     "QTDE_SC": "0"
   },
   {
@@ -2489,7 +2489,7 @@
     "PCD": "4X100",
     "OFFSET": "42",
     "ACABAMENTO": "HG (PRATA ESPECIAL)",
-    "QTDE_SP": "37",
+    "QTDE_SP": "33",
     "QTDE_SC": "12"
   },
   {
@@ -2516,7 +2516,7 @@
     "PCD": "4X100",
     "OFFSET": "32",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "8",
+    "QTDE_SP": "4",
     "QTDE_SC": "8"
   },
   {
@@ -2525,7 +2525,7 @@
     "PCD": "4X100",
     "OFFSET": "32",
     "ACABAMENTO": "HD (PRATA DIAMANTADA)",
-    "QTDE_SP": "16",
+    "QTDE_SP": "12",
     "QTDE_SC": "16"
   },
   {
@@ -2570,8 +2570,8 @@
     "PCD": "3X100",
     "OFFSET": "35",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SP": "81",
+    "QTDE_SC": "2"
   },
   {
     "MODELO": "M07",
@@ -2579,8 +2579,8 @@
     "PCD": "3X100",
     "OFFSET": "35",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SP": "12",
+    "QTDE_SC": "12"
   },
   {
     "MODELO": "M07",
@@ -2840,7 +2840,7 @@
     "PCD": "5X114",
     "OFFSET": "10",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "16",
+    "QTDE_SP": "12",
     "QTDE_SC": "4"
   },
   {
@@ -2949,7 +2949,7 @@
     "OFFSET": "40",
     "ACABAMENTO": "B (PRETO)",
     "QTDE_SP": "4",
-    "QTDE_SC": "0"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "M16",
@@ -3038,8 +3038,8 @@
     "PCD": "4X100",
     "OFFSET": "36",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "10",
-    "QTDE_SC": "12"
+    "QTDE_SP": "12",
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "M16",
@@ -3056,8 +3056,8 @@
     "PCD": "4X98",
     "OFFSET": "36",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "12",
-    "QTDE_SC": "0"
+    "QTDE_SP": "4",
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "M16",
@@ -3093,7 +3093,7 @@
     "OFFSET": "36",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "12",
-    "QTDE_SC": "8"
+    "QTDE_SC": "16"
   },
   {
     "MODELO": "M16",
@@ -3102,7 +3102,7 @@
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "23",
-    "QTDE_SC": "12"
+    "QTDE_SC": "28"
   },
   {
     "MODELO": "M16",
@@ -3111,7 +3111,7 @@
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "8"
+    "QTDE_SC": "7"
   },
   {
     "MODELO": "M16",
@@ -3128,8 +3128,8 @@
     "PCD": "4X98",
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "82",
-    "QTDE_SC": "4"
+    "QTDE_SP": "20",
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "M16",
@@ -3137,8 +3137,8 @@
     "PCD": "4X100",
     "OFFSET": "42",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "20",
-    "QTDE_SC": "12"
+    "QTDE_SP": "8",
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "M16",
@@ -3146,7 +3146,7 @@
     "PCD": "4X108",
     "OFFSET": "42",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "12",
+    "QTDE_SP": "8",
     "QTDE_SC": "8"
   },
   {
@@ -3174,7 +3174,7 @@
     "OFFSET": "42",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "36",
-    "QTDE_SC": "16"
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "M16",
@@ -3245,8 +3245,8 @@
     "PCD": "4X100/108",
     "OFFSET": "32",
     "ACABAMENTO": "HYPER DIAMOND(R. CROM.)",
-    "QTDE_SP": "8",
-    "QTDE_SC": "8"
+    "QTDE_SP": "0",
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "M17",
@@ -3281,7 +3281,7 @@
     "PCD": "4X100/108",
     "OFFSET": "30",
     "ACABAMENTO": "HD (PRATA DIAMANTADA)",
-    "QTDE_SP": "20",
+    "QTDE_SP": "12",
     "QTDE_SC": "12"
   },
   {
@@ -3371,8 +3371,8 @@
     "PCD": "4X100",
     "OFFSET": "42",
     "ACABAMENTO": "SS (PRATA)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "9"
+    "QTDE_SP": "12",
+    "QTDE_SC": "29"
   },
   {
     "MODELO": "M22",
@@ -3686,8 +3686,8 @@
     "PCD": "4X100",
     "OFFSET": "38",
     "ACABAMENTO": "HG (PRATA ESPECIAL)",
-    "QTDE_SP": "4",
-    "QTDE_SC": "5"
+    "QTDE_SP": "16",
+    "QTDE_SC": "29"
   },
   {
     "MODELO": "M25",
@@ -3731,7 +3731,7 @@
     "PCD": "5X112",
     "OFFSET": "40",
     "ACABAMENTO": "HG (PRATA ESPECIAL)",
-    "QTDE_SP": "8",
+    "QTDE_SP": "4",
     "QTDE_SC": "8"
   },
   {
@@ -3759,7 +3759,7 @@
     "OFFSET": "7",
     "ACABAMENTO": "HD (PRATA DIAMANTADA)",
     "QTDE_SP": "31",
-    "QTDE_SC": "16"
+    "QTDE_SC": "12"
   },
   {
     "MODELO": "M28",
@@ -3795,7 +3795,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "B (PRETO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "4"
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "M28",
@@ -3812,8 +3812,8 @@
     "PCD": "4X98",
     "OFFSET": "38",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "8",
-    "QTDE_SC": "4"
+    "QTDE_SP": "12",
+    "QTDE_SC": "16"
   },
   {
     "MODELO": "M28",
@@ -3830,7 +3830,7 @@
     "PCD": "4X100",
     "OFFSET": "42",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "20",
+    "QTDE_SP": "24",
     "QTDE_SC": "0"
   },
   {
@@ -3839,7 +3839,7 @@
     "PCD": "4X108",
     "OFFSET": "42",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "4",
+    "QTDE_SP": "0",
     "QTDE_SC": "4"
   },
   {
@@ -3849,7 +3849,7 @@
     "OFFSET": "42",
     "ACABAMENTO": "B (PRETO)",
     "QTDE_SP": "12",
-    "QTDE_SC": "12"
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "M28",
@@ -3921,7 +3921,7 @@
     "OFFSET": "36",
     "ACABAMENTO": "GS (GLOSS SHADOW)",
     "QTDE_SP": "0",
-    "QTDE_SC": "4"
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "M28",
@@ -3939,7 +3939,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "GS (GLOSS SHADOW)",
     "QTDE_SP": "20",
-    "QTDE_SC": "12"
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "M28",
@@ -3965,8 +3965,8 @@
     "PCD": "4X100",
     "OFFSET": "36",
     "ACABAMENTO": "HG (PRATA ESPECIAL)",
-    "QTDE_SP": "12",
-    "QTDE_SC": "16"
+    "QTDE_SP": "81",
+    "QTDE_SC": "6"
   },
   {
     "MODELO": "M28",
@@ -4002,7 +4002,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "HG (PRATA ESPECIAL)",
     "QTDE_SP": "0",
-    "QTDE_SC": "28"
+    "QTDE_SC": "16"
   },
   {
     "MODELO": "M28",
@@ -4028,8 +4028,8 @@
     "PCD": "4X98",
     "OFFSET": "38",
     "ACABAMENTO": "HG (PRATA ESPECIAL)",
-    "QTDE_SP": "20",
-    "QTDE_SC": "14"
+    "QTDE_SP": "12",
+    "QTDE_SC": "10"
   },
   {
     "MODELO": "M28",
@@ -4136,8 +4136,8 @@
     "PCD": "5X110",
     "OFFSET": "30",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "12"
+    "QTDE_SP": "81",
+    "QTDE_SC": "2"
   },
   {
     "MODELO": "M30",
@@ -4146,7 +4146,7 @@
     "OFFSET": "42",
     "ACABAMENTO": "B (PRETO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "4"
+    "QTDE_SC": "16"
   },
   {
     "MODELO": "M30",
@@ -4182,7 +4182,7 @@
     "OFFSET": "30",
     "ACABAMENTO": "B (PRETO)",
     "QTDE_SP": "4",
-    "QTDE_SC": "4"
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "M30",
@@ -4380,7 +4380,7 @@
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "12",
-    "QTDE_SC": "8"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "M30",
@@ -4505,7 +4505,7 @@
     "PCD": "5X100",
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "16",
+    "QTDE_SP": "12",
     "QTDE_SC": "12"
   },
   {
@@ -4587,7 +4587,7 @@
     "OFFSET": "40",
     "ACABAMENTO": "GS (GLOSS SHADOW)",
     "QTDE_SP": "8",
-    "QTDE_SC": "4"
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "M30",
@@ -4605,7 +4605,7 @@
     "OFFSET": "42",
     "ACABAMENTO": "GS (GLOSS SHADOW)",
     "QTDE_SP": "0",
-    "QTDE_SC": "1"
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "M30",
@@ -4875,7 +4875,7 @@
     "OFFSET": "42",
     "ACABAMENTO": "LBF(LIP BLACK FOSCO)",
     "QTDE_SP": "4",
-    "QTDE_SC": "3"
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "M30",
@@ -4964,7 +4964,7 @@
     "PCD": "6X139",
     "OFFSET": "0",
     "ACABAMENTO": "B (BLACK.)",
-    "QTDE_SP": "36",
+    "QTDE_SP": "32",
     "QTDE_SC": "11"
   },
   {
@@ -4982,8 +4982,8 @@
     "PCD": "5X120",
     "OFFSET": "15",
     "ACABAMENTO": "BF (BLACK FOSCO)",
-    "QTDE_SP": "4",
-    "QTDE_SC": "8"
+    "QTDE_SP": "0",
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "M31",
@@ -5036,7 +5036,7 @@
     "PCD": "6X139",
     "OFFSET": "0",
     "ACABAMENTO": "BF (BLACK FOSCO)",
-    "QTDE_SP": "4",
+    "QTDE_SP": "0",
     "QTDE_SC": "0"
   },
   {
@@ -5063,7 +5063,7 @@
     "PCD": "6X114",
     "OFFSET": "15",
     "ACABAMENTO": "FGF(GRAF FOSCO B PRETO)",
-    "QTDE_SP": "12",
+    "QTDE_SP": "8",
     "QTDE_SC": "8"
   },
   {
@@ -5073,7 +5073,7 @@
     "OFFSET": "15",
     "ACABAMENTO": "FGF(GRAF FOSCO B PRETO)",
     "QTDE_SP": "91",
-    "QTDE_SC": "1"
+    "QTDE_SC": "5"
   },
   {
     "MODELO": "M31",
@@ -5108,8 +5108,8 @@
     "PCD": "6X139",
     "OFFSET": "0",
     "ACABAMENTO": "FGF(GRAF FOSCO B PRETO)",
-    "QTDE_SP": "10",
-    "QTDE_SC": "12"
+    "QTDE_SP": "21",
+    "QTDE_SC": "2"
   },
   {
     "MODELO": "M31",
@@ -5234,7 +5234,7 @@
     "PCD": "4X98/108",
     "OFFSET": "40",
     "ACABAMENTO": "GS (GLOSS SHADOW)",
-    "QTDE_SP": "4",
+    "QTDE_SP": "0",
     "QTDE_SC": "8"
   },
   {
@@ -5396,7 +5396,7 @@
     "PCD": "5X100/105",
     "OFFSET": "40",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "0",
+    "QTDE_SP": "8",
     "QTDE_SC": "0"
   },
   {
@@ -5405,8 +5405,8 @@
     "PCD": "5X100/108",
     "OFFSET": "40",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SP": "8",
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "M34",
@@ -5442,7 +5442,7 @@
     "OFFSET": "30",
     "ACABAMENTO": "B (PRETO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "12"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "M34",
@@ -5459,8 +5459,8 @@
     "PCD": "5X100/105",
     "OFFSET": "40",
     "ACABAMENTO": "GS (GLOSS SHADOW)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SP": "8",
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "M34",
@@ -5468,7 +5468,7 @@
     "PCD": "5X100/108",
     "OFFSET": "40",
     "ACABAMENTO": "GS (GLOSS SHADOW)",
-    "QTDE_SP": "0",
+    "QTDE_SP": "82",
     "QTDE_SC": "0"
   },
   {
@@ -5477,8 +5477,8 @@
     "PCD": "5X100/112",
     "OFFSET": "40",
     "ACABAMENTO": "GS (GLOSS SHADOW)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SP": "12",
+    "QTDE_SC": "20"
   },
   {
     "MODELO": "M34",
@@ -5486,7 +5486,7 @@
     "PCD": "5X100/114",
     "OFFSET": "40",
     "ACABAMENTO": "GS (GLOSS SHADOW)",
-    "QTDE_SP": "0",
+    "QTDE_SP": "16",
     "QTDE_SC": "0"
   },
   {
@@ -5495,8 +5495,8 @@
     "PCD": "5X112",
     "OFFSET": "28",
     "ACABAMENTO": "GS (GLOSS SHADOW)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "16"
+    "QTDE_SP": "12",
+    "QTDE_SC": "12"
   },
   {
     "MODELO": "M34",
@@ -5504,7 +5504,7 @@
     "PCD": "5X120",
     "OFFSET": "35",
     "ACABAMENTO": "GS (GLOSS SHADOW)",
-    "QTDE_SP": "0",
+    "QTDE_SP": "12",
     "QTDE_SC": "12"
   },
   {
@@ -5514,7 +5514,7 @@
     "OFFSET": "30",
     "ACABAMENTO": "GS (GLOSS SHADOW)",
     "QTDE_SP": "16",
-    "QTDE_SC": "16"
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "M34",
@@ -5522,7 +5522,7 @@
     "PCD": "5X100/105",
     "OFFSET": "40",
     "ACABAMENTO": "HG (PRATA ESPECIAL)",
-    "QTDE_SP": "0",
+    "QTDE_SP": "8",
     "QTDE_SC": "0"
   },
   {
@@ -5550,7 +5550,7 @@
     "OFFSET": "40",
     "ACABAMENTO": "HG (PRATA ESPECIAL)",
     "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "M34",
@@ -5567,7 +5567,7 @@
     "PCD": "5X120",
     "OFFSET": "35",
     "ACABAMENTO": "HG (PRATA ESPECIAL)",
-    "QTDE_SP": "0",
+    "QTDE_SP": "8",
     "QTDE_SC": "0"
   },
   {
@@ -6048,12 +6048,12 @@
     "QTDE_SC": "0"
   },
   {
-    "MODELO": "NEWSUN",
+    "MODELO": "NEWSU",
     "ARO": "17X7",
     "PCD": "4X99/114",
     "OFFSET": "38",
     "ACABAMENTO": "SS (PRATA)",
-    "QTDE_SP": "4",
+    "QTDE_SP": "0",
     "QTDE_SC": "0"
   },
   {
@@ -6117,7 +6117,7 @@
     "OFFSET": "35",
     "ACABAMENTO": "SS (PRATA)",
     "QTDE_SP": "14",
-    "QTDE_SC": "40"
+    "QTDE_SC": "90"
   },
   {
     "MODELO": "PINGO",
@@ -6125,7 +6125,7 @@
     "PCD": "4X100",
     "OFFSET": "30",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "55",
+    "QTDE_SP": "51",
     "QTDE_SC": "0"
   },
   {
@@ -6134,7 +6134,7 @@
     "PCD": "4X100",
     "OFFSET": "30",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "23",
+    "QTDE_SP": "3",
     "QTDE_SC": "0"
   },
   {
@@ -6234,7 +6234,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "GF (GRAFITE FOSCO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "4"
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "R07",
@@ -6359,8 +6359,8 @@
     "PCD": "4X100",
     "OFFSET": "45",
     "ACABAMENTO": "SS (PRATA)",
-    "QTDE_SP": "1",
-    "QTDE_SC": "8"
+    "QTDE_SP": "16",
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "R15",
@@ -6369,7 +6369,7 @@
     "OFFSET": "41",
     "ACABAMENTO": "SS (PRATA)",
     "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SC": "20"
   },
   {
     "MODELO": "R16",
@@ -6539,8 +6539,8 @@
     "PCD": "4X100",
     "OFFSET": "49",
     "ACABAMENTO": "SS (PRATA)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SP": "12",
+    "QTDE_SC": "28"
   },
   {
     "MODELO": "R26",
@@ -6728,7 +6728,7 @@
     "PCD": "4X98",
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "8",
+    "QTDE_SP": "0",
     "QTDE_SC": "0"
   },
   {
@@ -6774,7 +6774,7 @@
     "OFFSET": "25",
     "ACABAMENTO": "GF (GRAFITE FOSCO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "R41",
@@ -6792,7 +6792,7 @@
     "OFFSET": "25",
     "ACABAMENTO": "SS (PRATA)",
     "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "R42",
@@ -6945,7 +6945,7 @@
     "OFFSET": "28",
     "ACABAMENTO": "GF (GRAFITE FOSCO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "R50",
@@ -6962,8 +6962,8 @@
     "PCD": "4X100",
     "OFFSET": "41",
     "ACABAMENTO": "GF (GRAFITE FOSCO)",
-    "QTDE_SP": "4",
-    "QTDE_SC": "0"
+    "QTDE_SP": "12",
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "R51",
@@ -6971,8 +6971,8 @@
     "PCD": "4X100",
     "OFFSET": "41",
     "ACABAMENTO": "SS (PRATA)",
-    "QTDE_SP": "7",
-    "QTDE_SC": "0"
+    "QTDE_SP": "19",
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "R53",
@@ -7215,7 +7215,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "SS (PRATA)",
     "QTDE_SP": "2",
-    "QTDE_SC": "0"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "R64",
@@ -7394,8 +7394,8 @@
     "PCD": "4X98",
     "OFFSET": "30",
     "ACABAMENTO": "GD (GRAFITE DIAMANTADO)",
-    "QTDE_SP": "4",
-    "QTDE_SC": "4"
+    "QTDE_SP": "8",
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "R73",
@@ -7494,7 +7494,7 @@
     "OFFSET": "36",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "19"
+    "QTDE_SC": "11"
   },
   {
     "MODELO": "R75",
@@ -7511,8 +7511,8 @@
     "PCD": "4X100",
     "OFFSET": "36",
     "ACABAMENTO": "GD (GRAFITE DIAMANTADO)",
-    "QTDE_SP": "31",
-    "QTDE_SC": "6"
+    "QTDE_SP": "0",
+    "QTDE_SC": "11"
   },
   {
     "MODELO": "R75",
@@ -7601,8 +7601,8 @@
     "PCD": "6X139",
     "OFFSET": "35",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SP": "4",
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "R79",
@@ -7709,7 +7709,7 @@
     "PCD": "4X100",
     "OFFSET": "36",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "41",
+    "QTDE_SP": "81",
     "QTDE_SC": "3"
   },
   {
@@ -7737,7 +7737,7 @@
     "OFFSET": "27",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "12",
-    "QTDE_SC": "8"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "R84",
@@ -7763,7 +7763,7 @@
     "PCD": "4X130",
     "OFFSET": "42",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "12",
+    "QTDE_SP": "4",
     "QTDE_SC": "6"
   },
   {
@@ -7916,8 +7916,8 @@
     "PCD": "5X100",
     "OFFSET": "39",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "4",
-    "QTDE_SC": "0"
+    "QTDE_SP": "0",
+    "QTDE_SC": "1"
   },
   {
     "MODELO": "R89",
@@ -7934,7 +7934,7 @@
     "PCD": "5X100",
     "OFFSET": "39",
     "ACABAMENTO": "GD (GRAFITE DIAMANTADO)",
-    "QTDE_SP": "16",
+    "QTDE_SP": "12",
     "QTDE_SC": "12"
   },
   {
@@ -8006,7 +8006,7 @@
     "PCD": "4X100",
     "OFFSET": "38",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "4",
+    "QTDE_SP": "8",
     "QTDE_SC": "4"
   },
   {
@@ -8060,8 +8060,8 @@
     "PCD": "5X100",
     "OFFSET": "38",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "12"
+    "QTDE_SP": "12",
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "R93",
@@ -8241,7 +8241,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "B (PRETO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "8"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "R94",
@@ -8268,7 +8268,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "20",
-    "QTDE_SC": "32"
+    "QTDE_SC": "20"
   },
   {
     "MODELO": "R94",
@@ -8277,7 +8277,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "16",
-    "QTDE_SC": "56"
+    "QTDE_SC": "16"
   },
   {
     "MODELO": "R94",
@@ -8285,7 +8285,7 @@
     "PCD": "4X100",
     "OFFSET": "38",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "27",
+    "QTDE_SP": "21",
     "QTDE_SC": "13"
   },
   {
@@ -8295,7 +8295,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "20",
-    "QTDE_SC": "44"
+    "QTDE_SC": "22"
   },
   {
     "MODELO": "R94",
@@ -8312,8 +8312,8 @@
     "PCD": "4X100",
     "OFFSET": "38",
     "ACABAMENTO": "BDS (BLACK DIA SMOKE)",
-    "QTDE_SP": "21",
-    "QTDE_SC": "24"
+    "QTDE_SP": "17",
+    "QTDE_SC": "20"
   },
   {
     "MODELO": "R94",
@@ -8321,7 +8321,7 @@
     "PCD": "5X100",
     "OFFSET": "38",
     "ACABAMENTO": "BDS (BLACK DIA SMOKE)",
-    "QTDE_SP": "23",
+    "QTDE_SP": "27",
     "QTDE_SC": "24"
   },
   {
@@ -8330,8 +8330,8 @@
     "PCD": "4X100",
     "OFFSET": "38",
     "ACABAMENTO": "BDS (BLACK DIA SMOKE)",
-    "QTDE_SP": "12",
-    "QTDE_SC": "24"
+    "QTDE_SP": "82",
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "R94",
@@ -8339,8 +8339,8 @@
     "PCD": "5X100",
     "OFFSET": "38",
     "ACABAMENTO": "BDS (BLACK DIA SMOKE)",
-    "QTDE_SP": "83",
-    "QTDE_SC": "2"
+    "QTDE_SP": "0",
+    "QTDE_SC": "12"
   },
   {
     "MODELO": "R94",
@@ -8465,7 +8465,7 @@
     "PCD": "4X98",
     "OFFSET": "36",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "0",
+    "QTDE_SP": "8",
     "QTDE_SC": "0"
   },
   {
@@ -8492,7 +8492,7 @@
     "PCD": "4X98",
     "OFFSET": "36",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "0",
+    "QTDE_SP": "12",
     "QTDE_SC": "8"
   },
   {
@@ -8510,8 +8510,8 @@
     "PCD": "4X98",
     "OFFSET": "35",
     "ACABAMENTO": "GD (GRAFITE DIAMANTADO)",
-    "QTDE_SP": "11",
-    "QTDE_SC": "2"
+    "QTDE_SP": "17",
+    "QTDE_SC": "16"
   },
   {
     "MODELO": "S03",
@@ -8735,7 +8735,7 @@
     "PCD": "6X139",
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "4",
+    "QTDE_SP": "0",
     "QTDE_SC": "4"
   },
   {
@@ -8744,8 +8744,8 @@
     "PCD": "5X114",
     "OFFSET": "43",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "81",
-    "QTDE_SC": "2"
+    "QTDE_SP": "8",
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "S13",
@@ -8897,7 +8897,7 @@
     "PCD": "5X100",
     "OFFSET": "38",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "4",
+    "QTDE_SP": "0",
     "QTDE_SC": "0"
   },
   {
@@ -8916,7 +8916,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "B (PRETO)",
     "QTDE_SP": "4",
-    "QTDE_SC": "4"
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "S18",
@@ -8942,8 +8942,8 @@
     "PCD": "5X100",
     "OFFSET": "38",
     "ACABAMENTO": "GB (GRAFITE BRILHANTE)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "1"
+    "QTDE_SP": "81",
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "S18",
@@ -9050,8 +9050,8 @@
     "PCD": "5X100",
     "OFFSET": "38",
     "ACABAMENTO": "HG (PRATA ESPECIAL)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SP": "16",
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "S18",
@@ -9132,7 +9132,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "32",
-    "QTDE_SC": "28"
+    "QTDE_SC": "16"
   },
   {
     "MODELO": "S19",
@@ -9150,7 +9150,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "17"
+    "QTDE_SC": "9"
   },
   {
     "MODELO": "S19",
@@ -9257,8 +9257,8 @@
     "PCD": "4X100",
     "OFFSET": "38",
     "ACABAMENTO": "GD (GRAFITE DIAMANTADO)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "12"
+    "QTDE_SP": "4",
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "S20",
@@ -9266,7 +9266,7 @@
     "PCD": "4X100",
     "OFFSET": "42",
     "ACABAMENTO": "GD (GRAFITE DIAMANTADO)",
-    "QTDE_SP": "4",
+    "QTDE_SP": "2",
     "QTDE_SC": "4"
   },
   {
@@ -9302,7 +9302,7 @@
     "PCD": "4X100",
     "OFFSET": "39",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "12",
+    "QTDE_SP": "16",
     "QTDE_SC": "4"
   },
   {
@@ -9366,7 +9366,7 @@
     "OFFSET": "39",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "16"
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "S22",
@@ -9600,7 +9600,7 @@
     "OFFSET": "36",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "4"
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "S24",
@@ -9608,7 +9608,7 @@
     "PCD": "5X105",
     "OFFSET": "36",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "72",
+    "QTDE_SP": "32",
     "QTDE_SC": "9"
   },
   {
@@ -9699,7 +9699,7 @@
     "OFFSET": "35",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "10"
+    "QTDE_SC": "6"
   },
   {
     "MODELO": "S25",
@@ -9789,7 +9789,7 @@
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "16",
-    "QTDE_SC": "12"
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "S29",
@@ -9824,7 +9824,7 @@
     "PCD": "6X139",
     "OFFSET": "28",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "36",
+    "QTDE_SP": "24",
     "QTDE_SC": "12"
   },
   {
@@ -9842,7 +9842,7 @@
     "PCD": "6X139",
     "OFFSET": "28",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "27",
+    "QTDE_SP": "31",
     "QTDE_SC": "4"
   },
   {
@@ -9851,7 +9851,7 @@
     "PCD": "6X139",
     "OFFSET": "28",
     "ACABAMENTO": "GD (GRAFITE DIAMANTADO)",
-    "QTDE_SP": "12",
+    "QTDE_SP": "0",
     "QTDE_SC": "8"
   },
   {
@@ -9869,8 +9869,8 @@
     "PCD": "6X139",
     "OFFSET": "28",
     "ACABAMENTO": "GD (GRAFITE DIAMANTADO)",
-    "QTDE_SP": "10",
-    "QTDE_SC": "12"
+    "QTDE_SP": "21",
+    "QTDE_SC": "2"
   },
   {
     "MODELO": "S31",
@@ -9888,7 +9888,7 @@
     "OFFSET": "25",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "8"
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "S31",
@@ -9896,7 +9896,7 @@
     "PCD": "6X139",
     "OFFSET": "35",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "24",
+    "QTDE_SP": "20",
     "QTDE_SC": "4"
   },
   {
@@ -9907,15 +9907,6 @@
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "12",
     "QTDE_SC": "4"
-  },
-  {
-    "MODELO": "S31",
-    "ARO": "22X9",
-    "PCD": "6X139",
-    "OFFSET": "40",
-    "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "0"
   },
   {
     "MODELO": "S32",
@@ -9986,7 +9977,7 @@
     "PCD": "4X100",
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "44",
+    "QTDE_SP": "36",
     "QTDE_SC": "36"
   },
   {
@@ -10014,7 +10005,7 @@
     "OFFSET": "28",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "12",
-    "QTDE_SC": "4"
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "S34",
@@ -10058,7 +10049,7 @@
     "PCD": "4X100",
     "OFFSET": "39",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "3",
+    "QTDE_SP": "8",
     "QTDE_SC": "4"
   },
   {
@@ -10067,7 +10058,7 @@
     "PCD": "4X100",
     "OFFSET": "39",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "0",
+    "QTDE_SP": "16",
     "QTDE_SC": "0"
   },
   {
@@ -10076,7 +10067,7 @@
     "PCD": "4X100",
     "OFFSET": "39",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "30",
+    "QTDE_SP": "22",
     "QTDE_SC": "11"
   },
   {
@@ -10112,7 +10103,7 @@
     "PCD": "6X139",
     "OFFSET": "35",
     "ACABAMENTO": "BD(PRETO DIAM. L200)",
-    "QTDE_SP": "17",
+    "QTDE_SP": "13",
     "QTDE_SC": "16"
   },
   {
@@ -10184,17 +10175,17 @@
     "PCD": "6X139",
     "OFFSET": "30",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "32",
+    "QTDE_SP": "23",
     "QTDE_SC": "16"
   },
   {
     "MODELO": "S39",
-    "ARO": "20X8,5",
+    "ARO": "20X8,",
     "PCD": "6X139",
     "OFFSET": "35",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "2",
-    "QTDE_SC": "8"
+    "QTDE_SC": "2"
   },
   {
     "MODELO": "S39",
@@ -10211,7 +10202,7 @@
     "PCD": "6X139",
     "OFFSET": "30",
     "ACABAMENTO": "GD (GRAFITE DIAMANTADO)",
-    "QTDE_SP": "12",
+    "QTDE_SP": "8",
     "QTDE_SC": "4"
   },
   {
@@ -10229,7 +10220,7 @@
     "PCD": "4X98",
     "OFFSET": "35",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "55",
+    "QTDE_SP": "51",
     "QTDE_SC": "8"
   },
   {
@@ -10256,7 +10247,7 @@
     "PCD": "4X100",
     "OFFSET": "38",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "10",
+    "QTDE_SP": "14",
     "QTDE_SC": "6"
   },
   {
@@ -10265,7 +10256,7 @@
     "PCD": "4X100",
     "OFFSET": "42",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "32",
+    "QTDE_SP": "72",
     "QTDE_SC": "0"
   },
   {
@@ -10680,7 +10671,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "B (PRETO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "8"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "S48",
@@ -10990,11 +10981,11 @@
   },
   {
     "MODELO": "S50",
-    "ARO": "20X8,5",
+    "ARO": "20X8,",
     "PCD": "6X139",
     "OFFSET": "35",
     "ACABAMENTO": "GF (GRAFITE FOSCO)",
-    "QTDE_SP": "4",
+    "QTDE_SP": "0",
     "QTDE_SC": "0"
   },
   {
@@ -11103,7 +11094,7 @@
     "OFFSET": "42",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "4"
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "S54",
@@ -11121,7 +11112,7 @@
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "32",
-    "QTDE_SC": "8"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "S54",
@@ -11237,7 +11228,7 @@
     "PCD": "5X100",
     "OFFSET": "35",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "8",
+    "QTDE_SP": "0",
     "QTDE_SC": "0"
   },
   {
@@ -11264,8 +11255,8 @@
     "PCD": "5X100",
     "OFFSET": "35",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "88",
-    "QTDE_SC": "29"
+    "QTDE_SP": "12",
+    "QTDE_SC": "41"
   },
   {
     "MODELO": "S56",
@@ -11283,7 +11274,7 @@
     "OFFSET": "39",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "8"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "S56",
@@ -11336,7 +11327,7 @@
     "PCD": "6X139",
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "4",
+    "QTDE_SP": "12",
     "QTDE_SC": "4"
   },
   {
@@ -11363,8 +11354,8 @@
     "PCD": "6X139",
     "OFFSET": "40",
     "ACABAMENTO": "GD (GRAFITE DIAMANTADO)",
-    "QTDE_SP": "4",
-    "QTDE_SC": "8"
+    "QTDE_SP": "81",
+    "QTDE_SC": "2"
   },
   {
     "MODELO": "S58",
@@ -11408,7 +11399,7 @@
     "PCD": "5X120",
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "13",
+    "QTDE_SP": "9",
     "QTDE_SC": "8"
   },
   {
@@ -11444,7 +11435,7 @@
     "PCD": "5X120",
     "OFFSET": "45",
     "ACABAMENTO": "BDS (BLACK DIA SMOKE)",
-    "QTDE_SP": "0",
+    "QTDE_SP": "8",
     "QTDE_SC": "8"
   },
   {
@@ -11516,7 +11507,7 @@
     "PCD": "5X100",
     "OFFSET": "40",
     "ACABAMENTO": "B (PRETO)",
-    "QTDE_SP": "5",
+    "QTDE_SP": "17",
     "QTDE_SC": "0"
   },
   {
@@ -12129,7 +12120,7 @@
     "OFFSET": "36",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "0",
-    "QTDE_SC": "8"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "K27",
@@ -12236,8 +12227,8 @@
     "PCD": "4X108",
     "OFFSET": "40",
     "ACABAMENTO": "GD (GRAFITE DIAMANTADO)",
-    "QTDE_SP": "41",
-    "QTDE_SC": "1"
+    "QTDE_SP": "0",
+    "QTDE_SC": "11"
   },
   {
     "MODELO": "K34",
@@ -12384,15 +12375,6 @@
     "QTDE_SC": "0"
   },
   {
-    "MODELO": "K57",
-    "ARO": "15X7,",
-    "PCD": "4X108",
-    "OFFSET": "32",
-    "ACABAMENTO": "HD (PRATA DIAMANTADA)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "0"
-  },
-  {
     "MODELO": "K58",
     "ARO": "17X4",
     "PCD": "5X112",
@@ -12506,8 +12488,8 @@
     "PCD": "4X100",
     "OFFSET": "32",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "0",
-    "QTDE_SC": "0"
+    "QTDE_SP": "12",
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "K63",
@@ -12515,7 +12497,7 @@
     "PCD": "4X108",
     "OFFSET": "32",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "8",
+    "QTDE_SP": "4",
     "QTDE_SC": "8"
   },
   {
@@ -12857,7 +12839,7 @@
     "PCD": "4X100",
     "OFFSET": "36",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "60",
+    "QTDE_SP": "64",
     "QTDE_SC": "0"
   },
   {
@@ -12894,7 +12876,7 @@
     "OFFSET": "38",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
     "QTDE_SP": "8",
-    "QTDE_SC": "4"
+    "QTDE_SC": "8"
   },
   {
     "MODELO": "K71",
@@ -13064,8 +13046,8 @@
     "PCD": "5X100",
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "15",
-    "QTDE_SC": "4"
+    "QTDE_SP": "11",
+    "QTDE_SC": "0"
   },
   {
     "MODELO": "K72",
@@ -13253,7 +13235,7 @@
     "PCD": "4X100",
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "4",
+    "QTDE_SP": "0",
     "QTDE_SC": "0"
   },
   {
@@ -13424,7 +13406,7 @@
     "PCD": "5X114",
     "OFFSET": "40",
     "ACABAMENTO": "BD (PRETO DIAMANTADO)",
-    "QTDE_SP": "4",
+    "QTDE_SP": "0",
     "QTDE_SC": "0"
   },
   {
@@ -13596,7 +13578,7 @@
     "OFFSET": "36",
     "ACABAMENTO": "B (PRETO)",
     "QTDE_SP": "2",
-    "QTDE_SC": "0"
+    "QTDE_SC": "4"
   },
   {
     "MODELO": "K76",
@@ -13622,8 +13604,8 @@
     "PCD": "4X100",
     "OFFSET": "36",
     "ACABAMENTO": "HG (PRATA ESPECIAL)",
-    "QTDE_SP": "81",
-    "QTDE_SC": "6"
+    "QTDE_SP": "41",
+    "QTDE_SC": "2"
   },
   {
     "MODELO": "K76",
@@ -13640,7 +13622,7 @@
     "PCD": "4X98",
     "OFFSET": "36",
     "ACABAMENTO": "HG (PRATA ESPECIAL)",
-    "QTDE_SP": "0",
+    "QTDE_SP": "12",
     "QTDE_SC": "4"
   },
   {
