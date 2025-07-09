@@ -390,7 +390,7 @@ async function searchByFilters() {
             }
             const normalized = `${wheel.MODELO} ${furos} ${acabamentoAbrev}`.replace(/\s+/g, " ").toUpperCase();
             
-            img.src = `http://localhost:3000/images/${normalized}.jpg`; // Caminho para suas imagens
+            img.src = `https://wheel-finder.onrender.com/images/${normalized}.jpg`; // Caminho para suas imagens
             img.alt = wheel.MODELO;
             img.width = 200;
             img.style.display = "block"; // Para garantir que o margin-bottom funcione na imagem
