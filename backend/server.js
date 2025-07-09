@@ -10,6 +10,13 @@ const archiver = require('archiver');
 const app = express();
 const PORT = 3000;
 
+//https://wheel-finder-front.onrender.com
+app.use(cors({
+    origin: 'https://wheel-finder-front.onrender.com', 
+    methods: ['GET', 'POST'], // Permita os métodos que você usa
+    allowedHeaders: ['Content-Type'], // Permita os cabeçalhos que você envia
+}));
+
 // Middleware to accept file uploads
 const upload = multer({ dest: 'uploads/' });
 
