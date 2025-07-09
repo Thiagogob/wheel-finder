@@ -45,8 +45,8 @@ const marcaMap = {
   "M10": ["GM"],
   "M11": ["VW", "GM"],
   "M12": ["TOYOTA", "MITSUBISHI", "GM"],
-  "M15": ["TOYOTA", "MITSUBISHI", "GM"],
-  "M16": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
+  "M15": ["TOYOTA", "MITSUBISHI", "GM", "FORD"],
+  "M16": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD", "FIAT"],
   "M17": ["VW", "GM"],
   "M18": ["VW", "GM"],
   "M19": ["VW", "GM"],
@@ -58,18 +58,18 @@ const marcaMap = {
   "M26": ["VW", "GM"],
   "M27": ["FORD"],
   "M28": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
-  "M30": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD", "JEEP"],
-  "M31": ["TOYOTA", "MITSUBISHI", "GM", "OFFROAD"],
-  "M32": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA"],
+  "M30": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD", "JEEP", "FIAT"],
+  "M31": ["TOYOTA", "MITSUBISHI", "GM", "OFFROAD", "FORD", "FIAT", "RENAULT", "VW"],
+  "M32": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "FORD"],
   "M34": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "FIAT"],
   "MAGNA": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA"],
   "MK7": ["VW", "HYUNDAI"],
-  "MORGAN": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA"],
+  "MORGAN": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "FORD"],
   "MTB": ["MITSUBISHI"],
   "NEWSUN": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "FIAT"],
   "NEWSU": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "FIAT"],
   "PINGO": ["VW"],
-  "ORBITA": ["VW"],
+  "ORBITAL": ["VW"],
   "POLO": ["VW", "TOYOTA", "GM", "FIAT"],
   "Q8": ["AUDI", "VW", "HYUNDAI"],
   "R06": ["VW"],
@@ -83,10 +83,10 @@ const marcaMap = {
   "R20": ["FIAT"],
   "R23": ["FIAT"],
   "R26": ["GM"],
-  "R29": ["HONDA"],
+  "R29": ["HONDA", "VW", "GM"],
   "R32": ["TOYOTA"],
   "R37": ["TOYOTA"],
-  "R39": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA"],
+  "R39": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "FIAT"],
   "R41": ["PEUGEOT", "CITROEN"],
   "R42": ["GM"],
   "R43": ["HYUNDAI"],
@@ -128,7 +128,7 @@ const marcaMap = {
   "R97": ["RENAULT"],
   "R99": ["HONDA"],
   "S01/L03": ["NISSAN"],
-  "S02": ["FIAT"],
+  "S02": ["FIAT", "JEEP"],
   "S03": ["FIAT"],
   "S04": ["HONDA"],
   "S05": ["PEUGEOT"],
@@ -137,7 +137,7 @@ const marcaMap = {
   "S08": ["HYUNDAI"],
   "S10": ["PEUGEOT"],
   "S11": ["TOYOTA"],
-  "S12": ["RENAULT"],
+  "S12": ["RENAULT", "HYUNDAI"],
   "S13": ["HYUNDAI"],
   "S14": ["CITROEN", "PEUGEOT"],
   "S15": ["FIAT"],
@@ -157,7 +157,7 @@ const marcaMap = {
   "S31":["TOYOTA"],
   "S32":["TOYOTA"],
   "S33":["NISSAN"],
-  "S34":["FIAT"],
+  "S34":["FIAT", "JEEP"],
   "S35": ["GM"],
   "S36": ["MITSUBISHI"],
   "S37": ["HYUNDAI"],
@@ -182,8 +182,8 @@ const marcaMap = {
   "S56": ["FIAT"],
   "S57": ["GM"],
   "S58": ["VW"],
-  "SAMPSO": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
-  "SAMPS": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
+  "SAMPSO": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
+  "SAMPS": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
   "STROLLE": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "STROLL": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "SUMMER": ["VW"],
@@ -196,17 +196,17 @@ const marcaMap = {
   "K56": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "K57": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "K60": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
-  "K63": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
+  "K63": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
   "K64": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "K67": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "BMW"],
-  "K71": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
+  "K71": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FIAT"],
   "K72": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "K73": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "K74": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
-  "K75": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
+  "K75": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FIAT", "JEEP", "FORD"],
   "K76": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "TARANT": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
-  "TE37": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
+  "TE37": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
   "TT 2010": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "VRS": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"]
 };
@@ -296,49 +296,7 @@ async function uploadStock() {
 
 }
 
-async function searchByAroBackend() {
-  const selectedAro = document.getElementById("sizeDropdown").value;
 
-  if (!selectedAro) {
-    alert("Selecione um aro primeiro.");
-    return;
-  }
-
-  try {
-    const response = await fetch(`http://localhost:3000/search?aro=${selectedAro}`);
-    const results = await response.json();
-
-    const resultsContainer = document.getElementById("results");
-    resultsContainer.innerHTML = '';
-
-    if (!Array.isArray(results) || results.length === 0) {
-      resultsContainer.innerHTML = "<p>Nenhum modelo encontrado.</p>";
-      return;
-    }
-
-  results.forEach(wheel => {
-    const container = document.createElement("div");
-
-    const img = document.createElement("img");
-    const normalized = wheel.MODELO.replace(/\s+/g, '').toUpperCase();
-    img.src = `http://localhost:3000/images/${normalized}.jpg`;
-    img.alt = wheel.MODELO;
-    img.width = 200; // ajuste como quiser
-
-    const label = document.createElement("p");
-    label.textContent = wheel.MODELO;
-
-    container.appendChild(img);
-    container.appendChild(label);
-    resultsContainer.appendChild(container);
-  });
-
-
-  } catch (err) {
-    console.error("Erro ao buscar aro do backend:", err);
-    alert("Erro na busca do servidor.");
-  }
-}
 
 async function searchByFilters() {
     const aroDropdown = document.getElementById("aroDropdown");
@@ -346,13 +304,14 @@ async function searchByFilters() {
     const pcdDropdown = document.getElementById("pcdDropdown");
     const finishDropdown = document.getElementById("finishDropdown");
     const marcaDropdown = document.getElementById("marcaDropdown");
+    const localEstoqueDropdown = document.getElementById("localEstoqueDropdown");
 
     const selectedAro = aroDropdown?.value;
     const selectedTalas = Array.from(talaDropdown?.selectedOptions || []).map(opt => opt.value);
     const selectedPCDs = Array.from(pcdDropdown?.selectedOptions || []).map(opt => opt.value);
     const finishes = Array.from(finishDropdown?.selectedOptions || []).map(opt => opt.value);
     const selectedMarca = marcaDropdown?.value; // Captura a marca selecionada
-
+    const selectedLocalEstoque = localEstoqueDropdown?.value;
     // Validação básica: Aro é obrigatório
     if (!selectedAro) {
         alert("Selecione um aro primeiro.");
@@ -366,6 +325,11 @@ async function searchByFilters() {
         selectedPCDs.forEach(pcd => queryParams.append("pcd", pcd));
         finishes.forEach(f => queryParams.append("acabamento", f));
 
+        
+        queryParams.append("localEstoque", selectedLocalEstoque);
+        console.log("Marca selecionada (do dropdown):", selectedMarca); // ADICIONE ESTA LINHA
+        console.log("Marca mapeada para S39:", marcaMap["S39"]);      // ADICIONE ESTA LINHA
+
         // Note: O filtro de estoque de SP não é mais passado aqui no frontend,
         // pois ele é aplicado de forma **obrigatória no backend** para todas as buscas.
 
@@ -378,6 +342,7 @@ async function searchByFilters() {
         }
 
         let results = await response.json(); // Converte a resposta para JSON
+        console.log("Resultados recebidos do backend (antes do filtro de marca):", results);
 
         // FILTRO DE MARCA (APLICADO NO FRONTEND)
         // Se uma marca foi selecionada no dropdown, filtra os resultados recebidos do backend
@@ -385,7 +350,11 @@ async function searchByFilters() {
             results = results.filter(wheel => {
                 const model = wheel.MODELO.toUpperCase(); // Converte o MODELO da roda para maiúsculas
                 // Verifica se o modelo existe como chave no marcaMap E se a marca selecionada está associada a ele
-                return marcaMap[model] && marcaMap[model].includes(selectedMarca);
+                const isMatch = marcaMap[model] && marcaMap[model].some(m => m.toUpperCase() === selectedMarca.toUpperCase());
+                console.log(`Verificando Modelo: ${wheel.MODELO}, Marca Selecionada: ${selectedMarca}, Match: ${isMatch}`); // ADICIONE ESTA LINHA
+
+                //return marcaMap[model] && marcaMap[model].includes(selectedMarca);
+                return isMatch;
             });
         }
 
@@ -410,7 +379,15 @@ async function searchByFilters() {
             // Lógica para construir o nome da imagem
             const furosMatch = wheel.PCD.match(/^(\d)[xX]/);
             const furos = furosMatch ? `${furosMatch[1]}F` : "";
-            const acabamentoAbrev = wheel.ACABAMENTO.split(" ")[0]; // Pega a primeira palavra do acabamento
+            let acabamentoAbrev = '';
+            const firstParenIndex = wheel.ACABAMENTO.indexOf('('); // Encontra a posição do primeiro '('let acabamentoAbrev = '';
+            if (firstParenIndex !== -1) {
+            // Se encontrou '(', pega tudo antes dele e remove espaços em branco no final
+              acabamentoAbrev = wheel.ACABAMENTO.substring(0, firstParenIndex).trim();
+            } else {
+            // Se não encontrou '(', pega a primeira palavra (para casos como "PRETO")
+              acabamentoAbrev = wheel.ACABAMENTO.split(" ")[0].trim();
+            }
             const normalized = `${wheel.MODELO} ${furos} ${acabamentoAbrev}`.replace(/\s+/g, " ").toUpperCase();
             
             img.src = `http://localhost:3000/images/${normalized}.jpg`; // Caminho para suas imagens

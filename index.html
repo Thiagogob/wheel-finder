@@ -74,6 +74,7 @@
                     <div class="col-md-4 col-sm-6">
                         <label for="aroDropdown" class="form-label">Selecione o aro:</label>
                         <select id="aroDropdown" multiple class="form-select">
+                            <option value="13">ARO 13</option>
                             <option value="14">ARO 14</option>
                             <option value="15">ARO 15</option>
                             <option value="16">ARO 16</option>
@@ -88,6 +89,7 @@
                     <div class="col-md-4 col-sm-6">
                         <label for="talaDropdown" class="form-label">Selecione a tala:</label>
                         <select id="talaDropdown" multiple class="form-select">
+                            <option value="5,5">5,5</option>
                             <option value="6">6</option>
                             <option value="7">7</option>
                             <option value="7,5">7,5</option>
@@ -102,12 +104,14 @@
                     <div class="col-md-4 col-sm-6">
                         <label for="pcdDropdown" class="form-label">Furação (PCD):</label>
                         <select id="pcdDropdown" multiple class="form-select">
+                            <option value="3X100">3X100</option>
                             <option value="4X98">4X98</option>
                             <option value="4X99">4X99</option>
                             <option value="4X100">4X100</option>
                             <option value="4X108">4X108</option>
                             <option value="4X114">4X114</option>
                             <option value="4X130">4X130</option>
+                            <option value="5X98">5X98</option>
                             <option value="5X100">5X100</option>
                             <option value="5X105">5X105</option>
                             <option value="5X108">5X108</option>
@@ -115,6 +119,7 @@
                             <option value="5X112">5X112</option>
                             <option value="5X113">5X113</option>
                             <option value="5X114">5X114</option>
+                            <option value="5X120">5X120</option>
                             <option value="5X127">5X127</option>
                             <option value="5X139">5X139</option>
                             <option value="5X205">5X205</option>
@@ -129,9 +134,20 @@
                             <option value="B (PRETO)">PRETO</option>
                             <option value="SS (PRATA)">PRATA</option>
                             <option value="HG (PRATA ESPECIAL)">PRATA ESPECIAL</option>
+                            <option value="SS (PRATA)">PRATA</option>
+                            <option value="SD (PRATA DIAMANTADA)">PRATA DIAMANTADA</option>
                             <option value="BF (BLACK FOSCO)">BLACK FOSCO</option>
+                            <option value="BFD (PRETO FOSCO DIAM)">BLACK FOSCO DIAMANTADO</option>
                             <option value="BD (PRETO DIAMANTADO)">PRETO DIAMANTADO</option>
-                            <option value="GB (GRAFITE BRILHANTE)">GRAFITE</option>
+                            <option value="GB (GRAFITE BRILHANTE)">GRAFITE BRILHANTE</option>
+                            <option value="GFD (GRAFITE FOSCO DIAM)">GRAFITE FOSCO DIAMANTADO</option>
+                            <option value="GF (GRAFITE FOSCO)">GRAFITE FOSCO</option>
+                            <option value="FGF(GRAF FOSCO B PRETO)">(GRAFITE FOSCO B PRETO)</option>
+                            <option value="GBL(GOLD BLACK LIP)">GOLD BLACK LIP</option>
+                            <option value="BZF (BRONZE FOSCO)">BZF</option>
+                            
+                            
+                            
                         </select>
                     </div>
 
@@ -147,14 +163,29 @@
                             <option value="HYUNDAI">Hyundai</option>
                             <option value="BMW">BMW</option>
                             <option value="FORD">Ford</option>
+                            <option value="TOYOTA">Toyota</option>
+                            <option value="PEUGEOT">Peugeot</option>
+                            <option value="JEEP">Jeep</option>
+                            <option value="NISSAN">Nissan</option>
+                            <option value="NISSAN">Renault</option>
+                            <option value="MITSUBISHI">Mitsubishi</option>
+
                         </select>
                     </div>
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
-                    <button class="btn btn-primary me-md-2" type="button" onclick="searchByFilters()">Buscar</button>
-                    <button id="downloadImagesFromBackend" class="btn btn-secondary" type="button">Baixar Imagens</button>
-                </div>
-            </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6">
+                        <label for="localEstoqueDropdown" class="form-label">Local do estoque:</label>
+                        <select id="localEstoqueDropdown" class="form-select">
+                            <option value="SP">São Paulo</option>
+                            <option value="SC">Santa Catarina</option>
+                        </select>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <button class="btn btn-primary me-md-2" type="button" onclick="searchByFilters()">Buscar</button>
+                        <button id="downloadImagesFromBackend" class="btn btn-secondary" type="button">Baixar Imagens</button>
+                    </div>
+                    </div>
         </div>
         <div id="results" class="mt-4 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         </div>

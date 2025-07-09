@@ -33,4 +33,11 @@ $(document).ready(function() {
     // Se você não quiser que "Todas" seja uma opção selecionável com clear, pode remover o allowClear
     // e adicionar uma opção vazia com o texto "Todas" como a primeira opção no HTML.
     // Exemplo: <option></option> no HTML e placeholder: "Todas" no JS
+
+        $('#localEstoqueDropdown').select2({
+        placeholder: "Selecione o local de estoque", // Placeholder para o dropdown de local
+        // Como ele sempre terá um valor (SP ou SC), allowClear pode não ser necessário,
+        // mas você pode adicioná-lo se quiser uma opção "limpa" para "Ambos" ou "Nenhum"
+        // allowClear: true
+    });
 });
