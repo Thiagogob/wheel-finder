@@ -264,7 +264,7 @@ async function uploadStock() {
   formData.append("stock", file);
 
   try {
-    const response = await fetch("http://localhost:3000/upload", {
+    const response = await fetch("https://wheel-finder.onrender.com/upload", {
       method: "POST",
       body: formData
     });
@@ -335,7 +335,7 @@ async function searchByFilters() {
 
         // Realiza a requisição ao backend
         // **IMPORTANTE:** Certifique-se de que 'http://localhost:3000' é o endereço e porta do seu backend Node.js
-        const response = await fetch(`http://localhost:3000/search?${queryParams.toString()}`);
+        const response = await fetch(`https://wheel-finder.onrender.com/search?${queryParams.toString()}`);
         if (!response.ok) {
             // Se a resposta não for OK (ex: 400, 500), joga um erro
             throw new Error(`Erro na resposta do servidor: ${response.status} ${response.statusText}`);
@@ -452,7 +452,7 @@ document.getElementById("downloadImagesFromBackend").addEventListener("click", (
     const imageUrls = Array.from(images).map(img => img.src);
 
     // Envia as URLs para o backend
-    fetch('http://localhost:3000/download-zip', { // Este é o endpoint que você criará no seu backend
+    fetch('https://wheel-finder.onrender.com/download-zip', { // Este é o endpoint que você criará no seu backend
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
