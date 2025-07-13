@@ -40,4 +40,9 @@ $(document).ready(function() {
         // mas você pode adicioná-lo se quiser uma opção "limpa" para "Ambos" ou "Nenhum"
         // allowClear: true
     });
+
+        $('#fabricaDropdown').select2({
+        placeholder: "Selecione a fábrica",
+        allowClear: false // Como "TODAS" é a opção padrão, não permitir limpar
+    });
 });

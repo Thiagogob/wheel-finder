@@ -44,22 +44,22 @@ const marcaMap = {
   "M08": ["GM"],
   "M10": ["GM"],
   "M11": ["VW", "GM"],
-  "M12": ["TOYOTA", "MITSUBISHI", "GM"],
-  "M15": ["TOYOTA", "MITSUBISHI", "GM", "FORD"],
+  "M12": ["OFFROAD"],
+  "M15": ["OFFROAD"],
   "M16": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD", "FIAT"],
   "M17": ["VW", "GM"],
   "M18": ["VW", "GM"],
   "M19": ["VW", "GM"],
   "M20": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
   "M21": ["GM"],
-  "M22": ["TOYOTA", "MITSUBISHI", "GM", "OFFROAD"],
-  "M23": ["TOYOTA", "MITSUBISHI", "GM", "OFFROAD"],
+  "M22": ["OFFROAD"],
+  "M23": ["OFFROAD"],
   "M25": ["VW", "HYUNDAI"],
   "M26": ["VW", "GM"],
   "M27": ["FORD"],
   "M28": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
   "M30": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD", "JEEP", "FIAT"],
-  "M31": ["TOYOTA", "MITSUBISHI", "GM", "OFFROAD", "FORD", "FIAT", "RENAULT", "VW"],
+  "M31": ["OFFROAD"],
   "M32": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "FORD"],
   "M34": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "FIAT"],
   "MAGNA": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA"],
@@ -212,6 +212,7 @@ const marcaMap = {
 };
 
 
+
 function searchProducts() {
   const color = document.getElementById("colorDropdown").value.toLowerCase();
   const size = document.getElementById("sizeDropdown").value.toLowerCase();
@@ -264,6 +265,8 @@ async function uploadStock() {
   formData.append("stock", file);
 
   try {
+    //http://localhost:3000
+    //"https://wheel-finder.onrender.com/upload"
     const response = await fetch("https://wheel-finder.onrender.com/upload", {
       method: "POST",
       body: formData
@@ -305,6 +308,8 @@ async function searchByFilters() {
     const finishDropdown = document.getElementById("finishDropdown");
     const marcaDropdown = document.getElementById("marcaDropdown");
     const localEstoqueDropdown = document.getElementById("localEstoqueDropdown");
+    const fabricaDropdown = document.getElementById("fabricaDropdown");
+
 
     const selectedAro = aroDropdown?.value;
     const selectedTalas = Array.from(talaDropdown?.selectedOptions || []).map(opt => opt.value);
@@ -312,6 +317,7 @@ async function searchByFilters() {
     const finishes = Array.from(finishDropdown?.selectedOptions || []).map(opt => opt.value);
     const selectedMarca = marcaDropdown?.value; // Captura a marca selecionada
     const selectedLocalEstoque = localEstoqueDropdown?.value;
+    const selectedFabrica = fabricaDropdown?.value; 
     // Validação básica: Aro é obrigatório
     if (!selectedAro) {
         alert("Selecione um aro primeiro.");
@@ -327,6 +333,10 @@ async function searchByFilters() {
 
         
         queryParams.append("localEstoque", selectedLocalEstoque);
+
+        queryParams.append("fabrica", selectedFabrica); 
+
+
         console.log("Marca selecionada (do dropdown):", selectedMarca); // ADICIONE ESTA LINHA
         console.log("Marca mapeada para S39:", marcaMap["S39"]);      // ADICIONE ESTA LINHA
 

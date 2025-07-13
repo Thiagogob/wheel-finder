@@ -123,6 +123,7 @@
                             <option value="5X127">5X127</option>
                             <option value="5X139">5X139</option>
                             <option value="5X205">5X205</option>
+                            <option value="6X114">6X114</option>
                             <option value="6X139">6X139</option>
                         </select>
                     </div>
@@ -159,6 +160,7 @@
                             <option value="GM">GM</option>
                             <option value="FIAT">Fiat</option>
                             <option value="AUDI">Audi</option>
+                            <option value="OFFROAD">Off Road</option>
                             <option value="HONDA">Honda</option>
                             <option value="HYUNDAI">Hyundai</option>
                             <option value="BMW">BMW</option>
@@ -181,12 +183,21 @@
                             <option value="SC">Santa Catarina</option>
                         </select>
                     </div>
+                    
+                    <div class="col-md-4 col-sm-6">
+                        <label for="fabricaDropdown" class="form-label">Fábrica:</label>
+                        <select id="fabricaDropdown" class="form-select">
+                            <option value="TODAS">Todas</option>
+                            <option value="KR">KR</option>
+                            <option value="BAR">BAR</option>
+                        </select>
+                    </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
                         <button class="btn btn-primary me-md-2" type="button" onclick="searchByFilters()">Buscar</button>
                         <button id="downloadImagesFromBackend" class="btn btn-secondary" type="button">Baixar Imagens</button>
                     </div>
                     </div>
-        </div>
+                    </div>
         <div id="results" class="mt-4 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         </div>
     </div>

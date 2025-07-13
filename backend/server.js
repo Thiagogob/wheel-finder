@@ -7,6 +7,44 @@ const path = require('path');
 const fetch = require('node-fetch');
 const archiver = require('archiver');
 
+const barModels = new Set ([
+  "ALFA",
+  "AMG",
+  "ARION",
+  "B20",
+  "BALLINA",
+  "BMW",
+  "CENTAU",
+  "DISCOVE",
+  "FUCHS",
+  "GLI",
+  "GTS",
+  "MAGNA",
+  "MK7",
+  "MORGAN",
+  "MORGA",
+  "MTB",
+  "NEWSUN",
+  "NEWSU",
+  "ORBITAL",
+  "PINGO",
+  "POLO",
+  "PORSC",
+  "PORSCHE",
+  "PORSCH",
+  "Q8",
+  "SAMPSO",
+  "SAMPS",
+  "STROLLE",
+  "STROLL",
+  "SUMMER",
+  "SUNLIN",
+  "TARANT",
+  "TE37",
+  "TT 2010",
+  "VRS"
+]);
+
 const app = express();
 const PORT = 3000;
 
@@ -132,7 +170,7 @@ app.use('/images', express.static(__dirname + '/images'));
 // --- Rota de Busca de Rodas (/search) ---
 app.get('/search', (req, res) => {
     // Extrai os parâmetros de filtro da query string da requisição
-    const { aro, tala, pcd, acabamento, localEstoque } = req.query;
+    const { aro, tala, pcd, acabamento, localEstoque, fabrica } = req.query;
     console.log("Requisição backend recebida. Query Params:", req.query);
 
     // Validação básica: 'aro' é um parâmetro obrigatório
@@ -152,6 +190,8 @@ app.get('/search', (req, res) => {
         const selectedPCDs = Array.isArray(pcd) ? pcd : pcd ? [pcd] : [];
         let selectedAcabamentos = Array.isArray(acabamento) ? acabamento : acabamento ? [acabamento] : [];
 
+        const selectedFabrica = fabrica?.toUpperCase();
+
         const stockKey = localEstoque === 'SC' ? 'QTDE_SC' : 'QTDE_SP';
         // Aplica todos os filtros aos dados do estoque
         const results = data.filter(wheel => {
@@ -168,6 +208,7 @@ app.get('/search', (req, res) => {
                 const pcdParts = pcdLower.split('/');
                 console.log("PCD (roda):", wheel.PCD, " Match PCD:", selectedPCDs.length === 0 || selectedPCDs.some(sel => pcdParts.some(p => p.includes(sel.toLowerCase()))));
                 
+                 // Assume verdadeiro por padrão (TODAS)
                 let acabamentoMatch = true;
                 if (selectedAcabamentos.includes("TODOS") || selectedAcabamentos.length === 0) {
                     acabamentoMatch = true;
@@ -185,6 +226,22 @@ app.get('/search', (req, res) => {
             if (!estoqueValido) {
                 return false; // Exclui a roda imediatamente se não atender ao requisito de estoque em SP
             }
+
+            let fabricaMatch = true;
+
+            // Garante que o MODELO da roda esteja em uppercase para comparação consistente com barModels
+            const wheelModelUpper = wheel.MODELO.toUpperCase(); 
+            const isBarModel = barModels.has(wheelModelUpper); // Verifica se o modelo está na lista BAR
+
+            if (selectedFabrica === "BAR") {
+                fabricaMatch = isBarModel; // Só mostra se for um modelo BAR
+            } else if (selectedFabrica === "KR") {
+                fabricaMatch = !isBarModel; // Só mostra se NÃO for um modelo BAR (ou seja, é KR ou outro)
+            } else { // selectedFabrica === "TODAS" ou null/undefined
+                fabricaMatch = true; // Não aplica filtro, mostra todas
+            }
+
+            if (!fabricaMatch) return false;
 
             // --- FILTRO DE ARO ---
             // Verifica se o ARO da roda inclui o aro selecionado
