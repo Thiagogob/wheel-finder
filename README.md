@@ -1,6 +1,5 @@
 # :wheel: Wheel Hub
 
-## :link: Project Link: (To be added)
 
 # :scroll: About
 
