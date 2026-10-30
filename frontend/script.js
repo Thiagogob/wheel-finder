@@ -1,3 +1,9 @@
+const API_BASE = "http://localhost:3005";
+
+// Modelos que servem em todas as montadoras (a furação/PCD é que define o encaixe)
+const UNIVERSAL = ["VW", "GM", "FIAT", "RENAULT", "HYUNDAI", "FORD", "HONDA", "TOYOTA", "NISSAN", "PEUGEOT", "CITROEN", "JEEP", "MITSUBISHI"];
+const UNIVERSAL_OFFROAD = [...UNIVERSAL, "OFFROAD"];
+
 const marcaMap = {
   "ALFA": ["FIAT"],
   "BRW119": ["VW"],
@@ -179,15 +185,20 @@ const marcaMap = {
   "S53": ["GM", "TOYOTA", "VW", "FIAT"],
   "S54": ["VW"],
   "S55": ["FIAT"],
-  "S56": ["FIAT"],
+  "S56": ["VW"],
   "S57": ["GM"],
   "S58": ["VW"],
+  "S59": ["VW", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
+  "S60": ["VW", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
   "SAMPSO": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
   "SAMPS": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
   "STROLLE": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "STROLL": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "SUMMER": ["VW"],
   "SUNLIN": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
+  "SUNLINE": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
+  "STRADA": ["FIAT"],
+  "S63": ["GM"],
   "L01": ["VW"],
   "L04": ["LAND", "FORD"],
   "K27": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
@@ -204,11 +215,37 @@ const marcaMap = {
   "K73": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "K74": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "K75": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FIAT", "JEEP", "FORD"],
-  "K76": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
+  "K76": UNIVERSAL,
   "TARANT": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
   "TE37": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI", "FORD"],
   "TT 2010": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
-  "VRS": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"]
+  "VRS": ["VW", "GM", "RENAULT", "HONDA", "TOYOTA", "NISSAN", "HYUNDAI"],
+  "AK2010": UNIVERSAL,
+  "F5": UNIVERSAL,
+  "FF1906": UNIVERSAL,
+  "K58": UNIVERSAL,
+  "M29": UNIVERSAL_OFFROAD,
+  "M33": UNIVERSAL_OFFROAD,
+  "M35": UNIVERSAL_OFFROAD,
+  "M36": UNIVERSAL,
+  "M37": UNIVERSAL_OFFROAD,
+  "M38": UNIVERSAL,
+  "M41": UNIVERSAL,
+  "M44": UNIVERSAL,
+  "K77": UNIVERSAL,
+  "I2008": UNIVERSAL,
+  "I2015": UNIVERSAL,
+  "I3017": UNIVERSAL_OFFROAD,
+  "I3041": UNIVERSAL_OFFROAD,
+  "I6391": UNIVERSAL_OFFROAD,
+  "M47": UNIVERSAL,
+  "M50": UNIVERSAL,
+  "MERCED": UNIVERSAL,
+  "RANGER": UNIVERSAL_OFFROAD,
+  "S61": UNIVERSAL,
+  "S62": UNIVERSAL,
+  "SILVERAD": UNIVERSAL_OFFROAD,
+  "SURF": UNIVERSAL
 };
 
 
@@ -265,9 +302,8 @@ async function uploadStock() {
   formData.append("stock", file);
 
   try {
-    //http://localhost:3000
     //"https://wheel-finder.onrender.com/upload"
-    const response = await fetch("https://wheel-finder.onrender.com/upload", {
+    const response = await fetch(`${API_BASE}/upload`, {
       method: "POST",
       body: formData
     });
@@ -344,8 +380,8 @@ async function searchByFilters() {
         // pois ele é aplicado de forma **obrigatória no backend** para todas as buscas.
 
         // Realiza a requisição ao backend
-        // **IMPORTANTE:** Certifique-se de que 'http://localhost:3000' é o endereço e porta do seu backend Node.js
-        const response = await fetch(`https://wheel-finder.onrender.com/search?${queryParams.toString()}`);
+        // **IMPORTANTE:** Certifique-se de que API_BASE (topo do arquivo) é o endereço e porta do seu backend Node.js
+        const response = await fetch(`${API_BASE}/search?${queryParams.toString()}`);
         if (!response.ok) {
             // Se a resposta não for OK (ex: 400, 500), joga um erro
             throw new Error(`Erro na resposta do servidor: ${response.status} ${response.statusText}`);
@@ -400,7 +436,7 @@ async function searchByFilters() {
             }
             const normalized = `${wheel.MODELO} ${furos} ${acabamentoAbrev}`.replace(/\s+/g, " ").toUpperCase();
             
-            img.src = `https://wheel-finder.onrender.com/images/${normalized}.jpg`; // Caminho para suas imagens
+            img.src = `${API_BASE}/images/${normalized}.jpg`; // Caminho para suas imagens
             img.alt = wheel.MODELO;
             img.width = 200;
             img.style.display = "block"; // Para garantir que o margin-bottom funcione na imagem
@@ -462,7 +498,7 @@ document.getElementById("downloadImagesFromBackend").addEventListener("click", (
     const imageUrls = Array.from(images).map(img => img.src);
 
     // Envia as URLs para o backend
-    fetch('https://wheel-finder.onrender.com/download-zip', { // Este é o endpoint que você criará no seu backend
+    fetch(`${API_BASE}/download-zip`, { // Este é o endpoint que você criará no seu backend
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

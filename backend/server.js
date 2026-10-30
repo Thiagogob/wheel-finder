@@ -8,51 +8,94 @@ const fetch = require('node-fetch');
 const archiver = require('archiver');
 
 const barModels = new Set ([
-  "ALFA",
+  "ALFA", "ALFA ROMEO",
   "AMG",
   "ARION",
   "B20",
   "BALLINA",
   "BMW",
-  "CENTAU",
-  "DISCOVE",
-  "FUCHS",
+  "CENTAU", "CENTAURO", "CENTAUR",
+  "DISCOVE", "DISCOVERY",
+  "FUCHS", "FUCHS 911",
   "GLI",
   "GTS",
   "MAGNA",
   "MK7",
-  "MORGAN",
-  "MORGA",
+  "MORGAN", "MORGA",
   "MTB",
-  "NEWSUN",
-  "NEWSU",
+  "NEWSUN", "NEWSU", "NEWSUNLINE",
   "ORBITAL",
   "PINGO",
-  "POLO",
-  "PORSC",
-  "PORSCHE",
-  "PORSCH",
+  "POLO", "POLO GTI",
+  "PORSC", "PORSCHE", "PORSCH", "PORSCHE 914",
   "Q8",
-  "SAMPSO",
-  "SAMPS",
-  "STROLLE",
-  "STROLL",
+  "SAMPSO", "SAMPS", "SAMPSON",
+  "STROLLE", "STROLL", "STROLLER",
   "SUMMER",
-  "SUNLIN",
-  "TARANT",
+  "SUNLIN", "SUNLINE",
+  "TARANT", "TARANTULA",
   "TE37",
   "TT 2010",
   "VRS"
 ]);
 
+// Formato do PDF de estoque:
+//   'auto' -> detecta automaticamente a cada upload (recomendado)
+//   'old'  -> modelos truncados, acabamento completo (ex: CENTAU / "BD (PRETO DIAMANTADO)")
+//   'new'  -> modelos completos, acabamento truncado (ex: CENTAURO / "BD (PRETO120")
+const PDF_FORMAT = 'auto';
+
+// Normaliza as variações de nome que o PDF gera (truncamentos diferentes em cada
+// formato) para um nome canônico único. O canônico foi escolhido para bater com os
+// arquivos de imagem em images/ e com barModels, então o resultado do parsing fica
+// igual independente do formato do PDF.
+const modelAliases = {
+  "ALFA ROMEO": "ALFA",
+  "BALLIN": "BALLINA",
+  "BRW1570": "BRW157",
+  "BRW1860": "BRW186",
+  "BRW2220": "BRW222",
+  "CENTAUR": "CENTAU",
+  "CENTAURO": "CENTAU",
+  "DISCOV": "DISCOVE",
+  "DISCOVERY": "DISCOVE",
+  "FUCHS 911": "FUCHS",
+  "MERCEDES RS03": "MERCED",
+  "MORGA": "MORGAN",
+  "NEWSU": "NEWSUN",
+  "NEWSUNLINE": "NEWSUN",
+  "ORBITA": "ORBITAL",
+  "PORSC": "PORSCH",
+  "PORSCHE": "PORSCH",
+  "PORSCHE 914": "PORSCH",
+  "SAMPS": "SAMPSO",
+  "SAMPSON": "SAMPSO",
+  "SILVER": "SILVERAD",
+  "SILVERADO": "SILVERAD",
+  "STROLL": "STROLLE",
+  "STROLLER": "STROLLE",
+  "SUMME": "SUMMER",
+  "SUNLIN": "SUNLINE",
+  "TARANTULA": "TARANT",
+};
+
+// No formato novo o acabamento vem truncado (parêntese aberto sem fechar) na maioria
+// das linhas; no antigo quase todos fecham. A proporção separa os dois com folga
+// (medido: novo = 903 abertos / 787 fechados; antigo = ~40 abertos / ~1670 fechados).
+function detectPdfFormat(text) {
+  const unclosed = (text.match(/\([^)\n]*\n/g) || []).length;
+  const closed = (text.match(/\([^)\n]*\)/g) || []).length;
+  return unclosed > closed * 0.3 ? 'new' : 'old';
+}
+
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 //https://wheel-finder-front.onrender.com
 app.use(cors({
-    origin: 'https://wheel-finder-front.onrender.com', 
-    methods: ['GET', 'POST'], // Permita os métodos que você usa
-    allowedHeaders: ['Content-Type'], // Permita os cabeçalhos que você envia
+    origin: ['http://localhost:3000', 'https://wheel-finder-front.onrender.com','http://127.0.0.1:5501'], 
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type'],
 }));
 
 // Middleware to accept file uploads
@@ -79,22 +122,22 @@ app.get('/products', (req, res) => {
   res.json(filtered);
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
-
-
-
 // Route: Upload + Parse PDF
 // Função de parsing
 function parseTxtToWheels(text) {
-  const pattern = /([A-Z0-9\-]+)(\d{2,3}[xX][\d,\.]+)(\d{1,2}[xX]9\d(?:\/\d{3})?|\d{1,2}[xX][0-8]\d{2}(?:\/\d{3})?)(-?\d{1,3})([A-Z\s\.]+(?:\s*\(.*?\))?(?:\s*F\.L\*)?)\s*(\d{2,4})/g;
+  // Espaços literais (e não \s) no modelo e acabamento: cada linha do PDF é uma roda,
+  // então nenhum campo pode atravessar a quebra de linha (linhas tipo "POLIDA" sem
+  // parêntese se colavam na linha seguinte quando \s era usado).
+  const pattern = /([A-Z][A-Z0-9\-]*(?: [A-Z0-9]+)?)(\d{2,3}[xX][\d,\.]+)(\d{1,2}[xX]9\d(?:\/\d{3})?|\d{1,2}[xX][0-8]\d{2}(?:\/\d{3})?)(-?\d{1,3})([A-Z \.\-]+(?: ?\(.*?\))?(?: ?F\.L\*)?) ?(\d{2,4})/g;
 
   const results = [];
   let match;
 
   while ((match = pattern.exec(text)) !== null) {
     let [_, modelo, aro, pcd, offset, acabamento, raw_qty] = match;
+
+    modelo = modelo.trim();
+    modelo = modelAliases[modelo] || modelo;
 
     // Corrige acabamento sem parêntese fechado
     if (acabamento.includes('(') && !acabamento.includes(')')) {
@@ -120,7 +163,7 @@ function parseTxtToWheels(text) {
     }
 
     results.push({
-      MODELO: modelo.trim(),
+      MODELO: modelo,
       ARO: aro.trim(),
       PCD: pcd.trim(),
       OFFSET: offset.trim(),
@@ -131,6 +174,25 @@ function parseTxtToWheels(text) {
   }
 
   return results;
+}
+
+// Limpeza do texto antes do parsing. Fechar o parêntese do acabamento truncado vale
+// para os dois formatos (o 'old' também corta algumas linhas, ex: "BBD (PRETO BORDA20").
+// Já remover o zero à esquerda do aro nos modelos BRW só vale para o 'new' — no 'old'
+// esse replace comeria o último dígito do modelo (ex: BRW1570 + 14X6 virava BRW157).
+function cleanPdfText(rawText, format) {
+  let text = rawText
+    .replace(/Pag\/\s*/g, '')
+    .replace(/MODELOFOTOSAROPCDACABAMENTO.*?@mkrrodas \| mkrrodas/g, '')
+    .replace(/\d{2}\/\d{2}\/\d{4}.*?\.(jasper)?/g, '')
+    .replace(/[^\S\r\n]+/g, ' ')
+    .replace(/\(([^)\d\n]*)(\d{2,4})\n/g, '($1)$2\n');
+
+  if (format === 'new') {
+    text = text.replace(/(BRW\d+)0(\d{2}[xX])/g, '$1$2');
+  }
+
+  return text;
 }
 
 
@@ -146,13 +208,10 @@ app.post('/upload', upload.single('stock'), async (req, res) => {
     fs.writeFileSync('parsed-pdf-output.txt', rawText, 'utf8');
     console.log('PDF text saved to parsed-pdf-output.txt');
 
-    // Limpeza do texto antes do parsing
-    const cleanText = rawText
-      .replace(/Pag\/\s*/g, '')
-      .replace(/MODELOFOTOSAROPCDACABAMENTO.*?@mkrrodas \| mkrrodas/g, '')
-      .replace(/\d{2}\/\d{2}\/\d{4}.*?\.(jasper)?/g, '')
-      .replace(/[^\S\r\n]+/g, ' ');
+    const format = PDF_FORMAT === 'auto' ? detectPdfFormat(rawText) : PDF_FORMAT;
+    console.log(`Formato do PDF: ${format} (PDF_FORMAT=${PDF_FORMAT})`);
 
+    const cleanText = cleanPdfText(rawText, format);
     const rodas = parseTxtToWheels(cleanText);
     fs.writeFileSync('stock-data.json', JSON.stringify(rodas, null, 2), 'utf8');
     res.setHeader('Content-Type', 'application/json');
@@ -160,6 +219,7 @@ app.post('/upload', upload.single('stock'), async (req, res) => {
   } catch (err) {
     console.error(err);
     return res.status(500).json({ error: 'Failed to parse file' });
+
   }
 });
 
@@ -398,8 +458,12 @@ app.post('/download-zip', async (req, res) => {
 });
 
 
-app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+      console.log(`Servidor rodando na porta ${PORT}`);
+  });
+}
+
+module.exports = { detectPdfFormat, cleanPdfText, parseTxtToWheels, PDF_FORMAT };
 
 
