@@ -128,7 +128,7 @@ function parseTxtToWheels(text) {
   // Espaços literais (e não \s) no modelo e acabamento: cada linha do PDF é uma roda,
   // então nenhum campo pode atravessar a quebra de linha (linhas tipo "POLIDA" sem
   // parêntese se colavam na linha seguinte quando \s era usado).
-  const pattern = /([A-Z][A-Z0-9\-]*(?: [A-Z0-9]+)?)(\d{2,3}[xX][\d,\.]+)(\d{1,2}[xX]9\d(?:\/\d{3})?|\d{1,2}[xX][0-8]\d{2}(?:\/\d{3})?)(-?\d{1,3})([A-Z \.\-]+(?: ?\(.*?\))?(?: ?F\.L\*)?) ?(\d{2,4})/g;
+  const pattern = /([A-Z][A-Z0-9\-]*(?: [A-Z0-9]+)?)(\d{2,3}[xX][\d,\.]+)(\d{1,2}[xX]9\d(?:\/\d{3})?|\d{1,2}[xX][0-8]\d{2}(?:\/\d{3})?)(-?\d{1,3})([A-Z \.\-]+(?: ?\(.*?\))?(?: ?F\.?L\.?\*)?) ?(\d{2,4})/g;
 
   const results = [];
   let match;
